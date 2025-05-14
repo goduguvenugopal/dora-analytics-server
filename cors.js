@@ -1,6 +1,6 @@
 const allowedOrigins = process.env.ALLOWED_ORIGINS.split(",");
 
-const corsOptions = {
+  const corsOptions = {
   origin: (origin, callback) => {
     if (origin && allowedOrigins.includes(origin)) {
       callback(null, true);
